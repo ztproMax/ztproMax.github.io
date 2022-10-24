@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>javascript-高级进阶篇(1) | zt&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="欢迎进入我的世界！">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.bd59abd3.css" as="style"><link rel="preload" href="/assets/js/app.6b2fd728.js" as="script"><link rel="preload" href="/assets/js/3.d37e4b81.js" as="script"><link rel="preload" href="/assets/js/1.894460d1.js" as="script"><link rel="preload" href="/assets/js/19.e2e4f8fb.js" as="script"><link rel="prefetch" href="/assets/js/10.ee99be9c.js"><link rel="prefetch" href="/assets/js/11.8331ccec.js"><link rel="prefetch" href="/assets/js/12.08538f70.js"><link rel="prefetch" href="/assets/js/13.75f86891.js"><link rel="prefetch" href="/assets/js/14.0077b66b.js"><link rel="prefetch" href="/assets/js/15.5737290c.js"><link rel="prefetch" href="/assets/js/16.f40678ff.js"><link rel="prefetch" href="/assets/js/17.aa8c19d5.js"><link rel="prefetch" href="/assets/js/18.73b5a57c.js"><link rel="prefetch" href="/assets/js/20.827337d1.js"><link rel="prefetch" href="/assets/js/4.b84bc54d.js"><link rel="prefetch" href="/assets/js/5.3b118bce.js"><link rel="prefetch" href="/assets/js/6.0fcc22e2.js"><link rel="prefetch" href="/assets/js/7.3559194b.js"><link rel="prefetch" href="/assets/js/8.1ead7008.js"><link rel="prefetch" href="/assets/js/9.91ddbaac.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bd59abd3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-1aefc0b4><div data-v-1aefc0b4><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1aefc0b4 data-v-1aefc0b4><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>zt's Blog</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>欢迎进入我的世界！</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>zt</span>
+            
+          <span data-v-25ba6db2>2017 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-1aefc0b4><header class="navbar" data-v-1aefc0b4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="zt's Blog" class="logo"> <span class="site-name">zt's Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/vue学习/" class="nav-link"><i class="undefined"></i>
+  vue学习
+</a></li><li class="dropdown-item"><!----> <a href="/categories/向往/" class="nav-link"><i class="undefined"></i>
+  向往
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link router-link-active"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/ztproMax" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="zt zt-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/front-end-promax" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="zt zt-gitee"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/weixin_64633723?spm=1000.2115.3001.5343" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="zt zt-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1aefc0b4></div> <aside class="sidebar" data-v-1aefc0b4><div class="personal-info-wrapper" data-v-39576ba9 data-v-1aefc0b4><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    zt
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>9</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>3</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/vue学习/" class="nav-link"><i class="undefined"></i>
+  vue学习
+</a></li><li class="dropdown-item"><!----> <a href="/categories/向往/" class="nav-link"><i class="undefined"></i>
+  向往
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link router-link-active"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/ztproMax" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="zt zt-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/front-end-promax" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="zt zt-gitee"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/weixin_64633723?spm=1000.2115.3001.5343" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="zt zt-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><a href="/docs/theme-reco/" aria-current="page" class="sidebar-link">Javascript笔记——基础</a></li><li><a href="/docs/theme-reco/theme.html" class="sidebar-link">javascript-高级进阶篇(2)</a></li><li><a href="/docs/theme-reco/plugin.html" aria-current="page" class="active sidebar-link">javascript-高级进阶篇(1)</a></li><li><a href="/docs/theme-reco/api.html" class="sidebar-link">html+css学习指北</a></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>javascript-高级进阶篇(1)</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>zt</span>
+            
+          <span data-v-25ba6db2>2017 - </span>
+          2022
+        </a></span></div></div> <div data-v-1aefc0b4><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">javascript-高级进阶篇(1)</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>zt</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>5/28/2020</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><p><img src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/09/04/ChMkJl4S2UaIBLRsAAL-fjdXtfYAAwKNwCGvAIAAv6W951.jpg" alt=""></p> <div class="custom-block tip"><p class="title">js高级</p><h2 id="一、面向对象"><a href="#一、面向对象" class="header-anchor">#</a> 一、面向对象</h2> <ol><li>通过class 关键字创建类 类名 我们还是习惯性定义首字母大写</li> <li>类里面有个 constructor 函数 可以接受传递过来的参数 同时返回实例对象</li> <li>constructor 函数 只要 new 生实例时 就会自动调用这个函数 如果我们不写这个函数 类也会自动生成这个函数</li> <li>生成实例 new 不能省略</li> <li>最后注意语法规范 创建类 类名后面不要加小括号 生成实例 类名后面加小括号 构造函数不需要加 function</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.创建类和生成实例
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;1.创建类和生成实例&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        class Start{
+            constructor(name,age,year){
+                this.name=name;
+                this.age=age;
+                this.year=year;
+            }
+        }
+ 
+        var zy = new Start('昭阳公主','25','750');
+        var jdl = new Start('金多禄','30','750');
+ 
+        console.log(zy.age);
+        console.log(jdl.name);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+2.类中添加共有方法
+(1) 类的公有属性放到 constructor 里面
+
+(2) 多个函数方法之间不需要添加逗号分隔
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;2.类中添加共有方法&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        class Start{
+            constructor(name,age,year){
+                this.name=name;
+                this.age=age;
+                this.year=year;
+            }
+            sing(song){
+                console.log(this.name +&quot;唱&quot;+ song);
+            }
+        }
+ 
+        var zy = new Start('昭阳公主','25','750');
+        var jdl = new Start('金多禄','30','750');
+ 
+        console.log(zy.age);
+        console.log(jdl.name);
+        zy.sing('皆大')
+        jdl.sing('欢喜')
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+ 3.类继承extends和super关键字
+extends：继承
+
+super：调用了父类中的构造函数（传值到父类中使用父类的方法）
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;3.类继承extends和super关键字&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        // class Father{
+        //     constructor(){
+                
+        //     }
+        //     money(){
+        //         console.log(100);
+        //     }
+        // }
+        // class Son extends Father{
+ 
+        // }
+        // var son = new Son();
+        // son.money();
+ 
+        class Father{
+            constructor(x,y){
+                this.x = x;
+                this.y = y;
+            }
+            sum(){
+                console.log(this.x + this.y);
+            }
+        }
+        class Son extends Father{
+            constructor(x,y){
+                super(x,y);//调用了父类中的构造函数
+            }
+        }
+        var son = new Son(22,54);
+        son.sum();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+4.super调用父类普通函数以及继承中属性方法查找原则
+
+继承中的属性或者方法查找原则：就近原则
+1. 继承中，如果实例化子类输出一个方法 先看子类有没有这个方法 如果有就先执行子类的
+2. 继承中，如果子类里面没有 就去查找父类有没有这个方法 如果有 就执行父类的这个方法(就近原则)
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;4.super调用父类普通函数以及继承中属性方法查找原则&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        class Father{
+            say(){
+                return &quot;我是粑粑&quot;;
+            }
+        }
+        class Son extends Father{
+            say(){
+                console.log(super.say() + &quot;的儿子&quot;);
+                //super.say()就是调用父类中的普通函数 say()
+            }
+        }
+        var son = new Son();
+        son.say();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+5.super必须放到子类this之前
+
+子类在构造函数中使用super, 必须放到 this 前面 (必须先调用父类的构造方法,在使用子类构造方法)
+
+ subtract()：减法操作
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;5.super必须放到子类this之前&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        class Father{
+            constructor(x,y){
+                this.x = x;
+                this.y = y;
+            }
+            add(){
+                console.log(this.x + this.y);
+            }
+        }
+ 
+        //子类继承父类加法方法 同时扩展减法方法
+        class Son extends Father{
+            constructor(x,y){
+                //利用super调用父类的构造函数
+                //super必须在子类this之前调用
+                super(x,y);
+                this.x = x;
+                this.y = y;
+            }
+            subtract(){
+                console.log(this.x - this.y);
+            }
+        }
+ 
+        var son = new Son(98,5);
+        son.add();
+        son.subtract();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+6.使用类2个注意点
+1. 在 ES 6 中类没有变量提升 所以必须先定义类 才能通过实例化对象
+2. 类里面的共有的属性和方法一定要加this使用
+3. constructor 里面的this指向实例对象 方法里面的this指向这个方法的调用者
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;6.使用类2个注意点&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button&gt;点击&lt;/button&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var that;
+        var _that;
+        class Star{
+            constructor(uname,age){
+                this.uname = uname;
+                this.age = age;
+                // this.sing();
+                this.btn = document.querySelector('button');
+                this.btn.onclick = this.sing;
+                console.log(this);
+                that = this;
+            }
+            sing(){
+                //这个sing方法里面的this指向的是btn这个按钮，因为这个按钮调用了这个函数
+                console.log(this);
+                console.log(that.uname);//that里面存储的是constructor里面的this
+            }
+            dance(){
+                //这个_that里面的this 指向的是实例对象 ldh 因为 ldh 调用了这个函数
+                _that = this;
+                console.log(this);
+            }
+        }
+        var ldh = new Star('离歌笑',20);
+        console.log(that === ldh);
+        ldh.dance();
+        console.log(_that === ldh);
+    // 1. 在 ES 6 中类没有变量提升 所以必须先定义类 才能通过实例化对象
+    // 2. 类里面的共有的属性和方法一定要加this使用
+    // 3. constructor 里面的this指向实例对象 方法里面的this指向这个方法的调用者
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+7.面向对象tab栏
+
+init()：初始化操作让相关的元素绑定事件
+
+insertAdjacentHTML() ：将指定的文本解析为HTML或XML，并将结果节点插入到DOM树中的指定位置。
+
+position是相对于元素的位置，并且必须是以下字符串之一：
+
+beforebegin: 元素自身的前面。
+afterbegin: 插入元素内部的第一个子节点之前。
+beforeend: 插入元素内部的最后一个子节点之后。
+afterend: 元素自身的后面。
+text是要被解析为HTML或XML,并插入到DOM树中的字符串。
+ select()：文本框的文字处于选定状态
+
+ this.blur()/this.click()直接调用事件
+
+var that;
+class Tab{
+    constructor(id){
+        //获取元素
+        that = this;
+        this.main = document.querySelector(id);
+        this.add = this.main.querySelector('.tabadd');
+        //li的父元素
+        this.ul = this.main.querySelector('.fisrstnav ul:first-child');
+        //section的父元素
+        this.fsection = this.main.querySelector('.tabscon');
+        this.init();
+    }
+    init(){
+        this.updateNode();
+        //init初始化操作让相关的元素绑定事件
+        for(var i =0;i&lt;this.lis.length;i++)
+        {
+            this.lis[i].index = i;
+            this.lis[i].onclick = this.toggleTab;
+            this.remove[i].onclick = this.removeTab;
+            this.spans[i].ondblclick = this.editTab;
+            this.sections[i].ondblclick = this.editTab;
+        }
+        this.add.onclick = this.addTab;
+    }
+    //获取所有的小li和section
+    updateNode(){
+        this.lis = document.querySelectorAll('li');
+        this.sections = document.querySelectorAll('section');
+        //全部的关闭按钮
+        this.remove = this.main.querySelectorAll('.icon-guanbi');
+        this.spans = this.main.querySelectorAll('.fisrstnav li span:first-child');
+    }
+    //1.切换功能
+    toggleTab(){
+        // console.log(this.index);
+        that.clearClass();
+        this.className ='liactive';
+        that.sections[this.index].className = 'conactive';
+    }
+    clearClass(){
+        for(var i =0;i&lt;this.lis.length;i++)
+        {
+            this.lis[i].className = '';
+            this.sections[i].className = '';
+        }
+    } 
+    getRandom(min,max)
+    {
+        return Math.floor(Math.random()*(max-min+1))+min;
+    } 
+    //2.添加功能
+    addTab(){
+        //方法1
+        // var li = document.createElement('li');
+        // li.innerText = 'AA';
+        // that.ul.appendChild(li);
+        that.clearClass();
+        var randoms = that.getRandom(1,100);
+        //方法2
+        //（1）创建li元素和section元素
+        // console.log(that.lis.length);
+        var li = '&lt;li class=&quot;liactive&quot;&gt;&lt;span&gt;测试'+randoms+'&lt;/span&gt;&lt;span class=&quot;iconfont icon-guanbi&quot;&gt;&lt;/span&gt;&lt;/li&gt;';
+        var section = '&lt;section class=&quot;conactive&quot;&gt;测试'+randoms+'&lt;/section&gt;';
+        //（2）把这两个元素追加到相应的父元素里面
+        that.ul.insertAdjacentHTML('beforeend', li);
+        that.fsection.insertAdjacentHTML('beforeend',section);
+        that.init();
+        
+    }
+    //3.删除功能
+    removeTab(e){
+        //阻止冒泡，防止触发li的切换点击事件
+        e.stopPropagation();
+        var index = this.parentNode.index;
+        that.lis[index].remove();
+        that.sections[index].remove();
+        //当我们删除了选中状态的这个li的时候，让它的前一个li处于选定状态
+        if(document.querySelector('iactive')) return;
+        index --;
+        //手动调用我们的点击事件 不需要鼠标触发
+        that.lis[index] &amp;&amp; that.lis[index].click();
+        that.init();
+    }
+    //4.修改功能
+    editTab(){
+        var str = this.innerHTML;
+        window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+        // this.innerHTML='&lt;input type=&quot;text&quot; value='+str+'&gt;';
+        this.innerHTML='&lt;input type=&quot;text&quot;&gt;';
+        var input = this.children[0];
+        input.value = str;
+        input.select();//文本框的文字处于选定状态
+        //当我们离开文本框就把文本框里面的值给span
+        input.onblur = function(){//onblur:失去焦点 onfocus:获得焦点
+            this.parentNode.innerHTML = this.value;
+        }
+        // （1）keyup 松开时触发
+        // （2）keydown 按下时触发
+        // （3）keypress 按下时触发 不能识别功能键 比如 ctrl shift 左右箭头
+        input.onkeyup = function(e){
+            if(e.keyCode === 13)
+            {
+                //手动调用表单失去焦点事件 不需要鼠标离开操作
+                this.blur();
+            }
+        }
+    }
+}
+new Tab(&quot;#tab&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br></div></div><h2 id="二、构造函数和原型"><a href="#二、构造函数和原型" class="header-anchor">#</a> 二、构造函数和原型</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.利用构造函数创建对象
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;1.利用构造函数创建对象&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    //1.利用new Object()创建对象
+    var obj1 = new Object();
+    //2.利用对象字面量创建对象
+    var obj2 = {};
+    //3.利用构造函数创建对象
+    function Star(name,age){
+        this.name = name;
+        this.age = age;
+        this.sing = function(song){
+            console.log(song);
+        }
+    }
+    var ldh = new Star('刘德华',18);
+    var zxy = new Star('张学友',20);
+    ldh.sing('冰雨');
+    ldh.sing('练习');
+    console.log(ldh.name);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+2.实例成员和静态成员
+构造函数中的属性和方法我们称为成员，成员可以添加
+
+实例成员就是构造函数内部通过this添加的成员 name age sing 就是实例成员
+
+实例成员只能通过实例化的对象来访问
+
+静态成员 在构造函数本身上添加的成员 sex就是静态成员
+
+静态成员只能通过构造函数来访问
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;1.2.实例成员和静态成员&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    //构造函数中的属性和方法我们称为成员，成员可以添加
+    function Star(name,age){
+        this.name = name;
+        this.age = age;
+        this.sing = function(song='xx'){
+            console.log(song);
+        }
+    }
+    var ldh = new Star('刘德华',18);
+    //实例成员就是构造函数内部通过this添加的成员 name age sing 就是实例成员
+    //实例成员只能通过实例化的对象来访问
+    console.log(ldh.name);
+    ldh.sing();
+    console.log(Star.age);//不可以通过构造函数来访问实例对象
+    //2.静态成员 在构造函数本身上添加的成员 sex就是静态成员
+    Star.sex='男';
+    console.log(Star.sex);
+    //2.静态成员只能通过构造函数来访问
+    console.log(ldh.sex);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+3.构造函数原型对象prototype
+一般情况下，我们的公共属性定义到构造函数里面，公共的方法我们放到原型对象身上
+
+构造函数通过原型分配的函数是所有对象所共享的
+JavaScript规定 每个构造函数都有一个 prototype属性 指向另一个对象。注意这个prototype 就是一个对象 这个对象的所有属性和方法 都会被构造函数所拥有。
+我们可以把那些不变的方法 直接定义在prototype 对象上 这样所有对象的实例就可以共享这些方法。
+原型就是一个对象，我们也称为prototype为对象
+原型的作用就是 共享方法。
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;3.构造函数原型对象prototype&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    function Star(name,age){
+        this.name = name;
+        this.age = age;
+        // this.sing = function(song='xx'){
+        //     console.log(song);
+        // }
+    }
+    Star.prototype.sing = function(){
+        console.log('不如跳舞');
+    }
+    var ldh = new Star('刘德华',18);
+    var zxy = new Star('张学友',20);
+    console.log(ldh.sing===zxy.sing);
+    console.dir(Star);
+    ldh.sing();
+    zxy.sing();
+    //2.一般情况下，我们的公共属性定义到构造函数里面，公共的方法我们放到原型对象身上
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+4.对象原型__proto__
+对象都会有一个属性 __ proto __ 指向构造函数的 prototype 原型对象，之所以我们对象可以使用构造函数 prototype 原型对象的属性和方法，就是因为对象有 __ proto __ 原型的存在。
+__ proto __ 对象原型和原型对象 prototype 是等价的
+__ proto __ 对象原型的意义就在于为对象的查找机制提供一个方向，或者说一条路线，但是他是一个非标准，因此在实际开发中，不可以使用这个属性，他只是内部向原型对象 prototype。
+__ proto __ 对象原型
+prototype 原型对象
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;4.对象原型__proto__&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    function Star(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    Star.prototype.sing = function(){
+        console.log('不如跳舞');
+    }  
+    var ldh = new Star('刘德华',18);
+    var zxy = new Star('张学友',20);
+    ldh.sing();//对象身上系统自己添加一个__proto__指向我们构造函数的原型对象
+    // console.dir(ldh);
+    // console.dir(Star);
+    console.log(ldh.__proto__===Star.prototype);
+    //方法的查找规则，首先先看ldh对象身上是否有sing方法，如果有就执行这个对象上的sing
+    //如果没有sing这个方法，因为有__proto__的存在,就去构造函数原型对象prototype身上去查找sing这个方法
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+5.原型constructor构造函数
+对象原型(__ proto __)和构造函数(prototype)原型对象里面都有一个属性constructor属性，constructor我们称为构造函数，因为他指向会构造函数本身。
+constructor 主要用于记录该对象引用那个构造函数，它可以让原型对象重新指向原来的构造函数
+
+如果我们修改了原来的原型对象，给原型对象赋值的是一个对象，则必须手动的利用constructor指回原来的构造函数
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;5.原型constructor构造函数&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    function Star(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    //很多情况下，我们需要手动的利用constructor 这个属性指回 原来的构造函数
+    // Star.prototype.sing = function(){
+    //     console.log('不如跳舞');
+    // }  
+    // Star.prototype.movie = function(){
+    //     console.log('不如演戏');
+    // }
+    Star.prototype ={
+        //如果我们修改了原来的原型对象，给原型对象赋值的是一个对象，则必须手动的利用constructor指回原来的构造函数
+        constructor:Star,
+        sing:function(){
+            console.log('不如跳舞');
+        },
+        movie:function(){
+            console.log('不如演戏'); 
+        }
+    }
+    var ldh = new Star('刘德华',18);
+    var zxy = new Star('张学友',20);
+    console.log(Star.prototype);
+    console.log(ldh.__proto__);
+    // console.log(Star);
+    // console.log(ldh);
+    console.log(Star.prototype.constructor);
+    console.log(ldh.__proto__.constructor);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+6.构造函数实例和原型对象的三角关系
+
+
+7.原型链
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;7.原型链&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    function Star(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    Star.prototype.sing = function(){
+        console.log('不如跳舞');
+    }  
+    var ldh = new Star('刘德华',18);
+    //1.只要是对象就有__proto__原型，指向原型对象
+    console.log(Star.prototype);
+    //2.我们Star原型对象里面的__proto__原型指向的是 Object.prototype
+    console.log(Star.prototype.__proto__ === Object.prototype);
+    //3.我们Object。prototype原型对象里面的__proto__原型 指向为null
+    console.log(Object.prototype.__proto__);//null
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+8.对象成员查找规则
+当访问一个对象的属性(包括方法)时，首先查找这个对象自身有没有该属性。
+如果没有就查找它的原型(也就是__ proto __指向的prototype原型对象)。
+如果还没有就查找原型对象的原型(Object的原型对象)。
+以此类推一直找到Object为止(null)
+__ proto __ 对象原型的意义就在于为对象成员查找机制提供一个方向，或者说一条路线
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;8.对象成员查找规则&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    function Star(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    Star.prototype.sing = function(){
+        console.log('不如跳舞');
+    }  
+    Star.prototype.sex = 'Girl';
+    // Object.prototype.sex = 'BOY';
+    var ldh = new Star('刘德华',18);
+    ldh.sex = 'Boy';
+    // console.log(ldh.sex);
+    console.log(Star.prototype);
+    console.log(ldh);
+    console.log(Object.prototype);
+    console.log(ldh.toString());
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+9.原型对象this指向
+谁调用指向谁
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;9.原型对象this指向&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    var that;
+    function Star(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    Star.prototype.sing = function(){
+        that = this;
+        console.log('不如跳舞');
+    }  
+    var ldh = new Star('刘德华',18);
+    //1.在构造函数中，里面this指向的是对象实例 ldh
+    ldh.sing();
+    //2.原型对象函数里面的this指向的是实例对象 ldh
+    console.log(ldh===that);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+10.利用原型对象扩展内置对象方法
+可以通过原型对象，对原来的内置对象进行扩展自定义的方法，比如给对象增加自定义求偶数和的功能。
+注意：数组和字符内置对象不能给原型对象覆盖操作 Array.prototype = {} , 只能是 Array.prototype.xxx = function(){}的方法。
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;10.利用原型对象扩展内置对象方法&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+    //原型对象的应用 扩展内置对象方法
+    Array.prototype.sum = function(){
+        var sum = 0;
+        for(var i=0;i&lt;this.length;i++)
+        {
+            sum+=this[i];
+        }
+        return sum;
+    }
+    //不可用，覆盖掉了原来内置对象的方法
+    // Array.prototype = {
+    //     sum:function(){
+    //         var sum = 0;
+    //         for(var i=0;i&lt;this.length;i++)
+    //         {
+    //             sum+=this[i];
+    //         }
+    //         return sum;
+    //     }
+    // }
+    var arr = [1,2,3,40];
+    console.log(arr.sum());
+    console.log(Array.prototype);    
+    var arr1 = new Array(11,22,3);
+    console.log(arr1.sum());
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+11.call方法的作用
+调用这个函数，并且修改函数运行时的this指向
+fun.call(thisArg, arg1, arg2, ...)
+thisArg : 当前调用函数的this的指向对象
+arg1, arg2 : 传递的其他参数
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;11.call方法的作用&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        //call方法
+        function fn(x,y){
+            console.log('我想喝手磨咖啡');
+            console.log(this);
+            console.log(x+y);
+        }
+        var o = {
+            uname :'angle',
+        }
+        // fn();
+        //1.call() 可以调用函数
+        // fn.call();
+        //2.call() 可以改变这个函数的this指向 此时这个函数的this 就指向了o这个对象
+        fn.call(o,1,20);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+12.利用父构造函数继承属性/方法
+ES 6之前并没有给我们提供extends继承 我们可以通过构造函数+原型对象模拟实训继承，被称为组合继承
+
+核心原理：通过call() 把父类型的this 指向子类型的this ， 这样就可以实现子类型继承父类型的属性。
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;12.利用父构造函数继承属性、方法&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+        //借用父构造函数继承属性
+        //1.父构造函数
+        function Father(uname,age){
+            //this 指向父构造函数的对象示例
+            this.uname = uname;
+            this.age = age;
+        }   
+        Father.prototype.money = function(){
+            console.log(100000);
+        }
+        //2.子构造函数
+        function Son(uname,age,score)
+        {
+            //this 指向子构造函数的对象示例
+            Father.call(this,uname,age);
+            this.score = score;
+        }
+        //借用父构造函数继承方法
+        // Son.prototype = Father.prototype; //这样直接复制会有问题，如果修改了子原型对象，父原型对象也会跟着一起变化
+        Son.prototype = new Father();
+        //如果利用对象的形式修改了原型对象，别忘了利用constructor指回原来的原型对象
+        Son.prototype.constructor = Son;
+        //这个是子构造函数专门的方法
+        Son.prototype.exam = function(){
+            console.log(&quot;孩子要考试&quot;);
+        }
+        var son = new Son('Ss',28,120);
+        console.log(son);
+        console.log(Father.prototype);
+        console.log(Son.prototype.constructor);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+13.类的本质
+class本质还是function
+类的所有方法都定义在类的prototype属性上
+类创建的实例，里面也有__ proto __指向类的prototype原型对象
+所以ES6的类它的绝大部分功能，ES5都可以做到，新的class写法只是让对象原型的写法更加清晰、更像面向对象编程的语言而已。
+所以ES6的类其实就是语法糖。
+语法糖：语法糖就是一种便捷写法，简单理解，有两种方法可以实现同样的功能，但是一种写法更加清晰、方便，那么这个方法就是语法糖。
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;13.类的本质&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+        // ES6 之前通过 构造函数+ 原型实现面向对象 编程
+        // (1) 构造函数有原型对象prototype 
+        // (2) 构造函数原型对象prototype 里面有constructor 指向构造函数本身
+        // (3) 构造函数可以通过原型对象添加方法
+        // (4) 构造函数创建的实例对象有__proto__ 原型指向 构造函数的原型对象
+        // ES6 通过 类 实现面向对象编程 
+        class Star{}
+        console.log(typeof Star);
+        //1.类的本质其实还是一个函数 我们也可以简单的认为 类就是 构造函数的另外一种写法
+        //(1)类有原型对象prototype
+        console.log(Star.prototype);
+        //(2) 类原型对象prototype 里面有constructor 指向类本身
+        console.log(Star.prototype.constructor);
+        //（3）类可以通过原型对象添加方法
+        Star.prototype.sing = function(){
+            console.log(&quot;雨一直下&quot;);
+        }
+        var ldh = new Star();
+        console.dir(ldh);
+        console.log(ldh.__proto__);
+        // (4) 类创建的实例对象有__proto__ 原型指向 类的原型对象
+        console.log(ldh.__proto__ === Star.prototype);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+ 数组方法
+
+迭(die)代(遍历)方法：forEach()、map()、filter()、 some()、every()
+
+14.迭代(遍历数组)forEach
+array.forEach(function(currentValue, index, arr))
+
+currentValue : 数组当前项的值
+index ：数组当前项的索引
+arr : 数组对象本身
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;14.迭代(遍历数组)forEach&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+        //forEach迭代（遍历）数组
+        var arr = [1,25,20];
+        var sum = 0;
+        arr.forEach(function(value,index,array){
+            console.log('每个数组元素',value);
+            console.log('每个数组元素的索引号',index);
+            console.log('数组本身',array);
+            // sum = value+sum;
+            sum += value;
+        })  
+        console.log(sum);  
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+15.筛选数组filter方法
+array.filter(function(currentValue, index, arr))
+
+    filter() 方法创建一个新的数组，新数组中的元素时通过检查指定数组中符合条件的所有元素，主要用于筛选数组
+    注意它直接返回一个新数组
+    currentValue : 数组当前项的值
+    index ：数组当前项的索引
+    arr : 数组对象本身
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;15.筛选数组filter方法&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+    //filter筛选数组(过滤器)
+    var arr = [12,66,103,4,88,3,7];
+    var newArr = arr.filter(function(value,index){
+        // return value &gt;=20;
+        return value % 2 === 0; 
+    })
+    console.log(newArr);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+16.查找数组中是否有满足条件的元素some方法
+array.some(function(currentValue, index, arr))
+
+    some() 方法用于检测数组中的元素是否满足指定条件 通俗点 查找数组中是否有满足条件的元素
+    注意它返回值是布尔值，如果查找到这个元素，就返回true，如果查找不到就返回false
+    如果找到第一个满足条件的元素，则终止循环，不在继续查找
+    currentValue : 数组当前项的值
+    index ：数组当前项的索引
+    arr : 数组对象本身
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;16.查找数组中是否有满足条件的元素some方法&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+    //filter筛选数组(过滤器)
+    var arr = [10,30,4];
+    var flag = arr.some(function(value,index){
+        // return value &gt;= 20;
+        return value &lt;  2;
+    })
+    console.log(flag);
+ 
+    var arr1 = ['red','blue','purper'];
+    var color = arr1.some(function(value){
+        return value == 'blue';
+    })
+    console.log(color);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+1. filter 也是查找满足条件的元素 返回的是一个数组 而且是把所有满足条件的元素返回回来
+
+2. some 也是查找满足条件的元素是否存在 返回的是一个布尔值 如果查找到第一个满足条件的元素就终止循环
+
+ map() 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。
+
+map() 方法按照原始数组元素顺序依次处理元素。
+
+注意： map() 不会对空数组进行检测。
+
+注意： map() 不会改变原始数组。
+
+    var numbers = [4, 9, 16, 25];
+    var x = numbers.map(x=&gt;x * 2);
+    console.log(x);
+
+17.查询商品案例
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+ 
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;17.查询商品案例&lt;/title&gt;
+    &lt;style&gt;
+        table {
+            width: 400px;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        
+        td,
+        th {
+            border: 1px solid #000;
+            text-align: center;
+        }
+        
+        input {
+            width: 50px;
+        }
+        
+        .search {
+            width: 600px;
+            margin: 20px auto;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+ 
+&lt;body&gt;
+    &lt;div class=&quot;search&quot;&gt;
+        按照价格查询: &lt;input type=&quot;text&quot; class=&quot;start&quot;&gt; - &lt;input type=&quot;text&quot; class=&quot;end&quot;&gt; &lt;button class=&quot;search-price&quot;&gt;搜索&lt;/button&gt; 按照商品名称查询: &lt;input type=&quot;text&quot; class=&quot;product&quot;&gt; &lt;button class=&quot;search-pro&quot;&gt;查询&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;id&lt;/th&gt;
+                &lt;th&gt;产品名称&lt;/th&gt;
+                &lt;th&gt;价格&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+ 
+ 
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;script&gt;
+       var data = [{
+           id:1,
+           name:'小米',
+           price:3999,
+       },
+       {
+           id:2,
+           name:'荣耀',
+           price:2999,
+       },
+       {
+           id:3,
+           name:'vivo',
+           price:1999,
+       },
+       {
+           id:4,
+           name:'魅族',
+           price:999,
+       },
+    //    {
+    //        id:5,
+    //        name:'魅族',
+    //        price:999,
+    //    }
+    ]
+    // 1. 获取相应的元素
+    var tbody = document.querySelector('tbody');
+    var search_price = document.querySelector('.search-price');
+    var start = document.querySelector('.start');
+    var end = document.querySelector('.end');
+    var search_pro = document.querySelector('.search-pro');
+    var product = document.querySelector('.product');
+    // 2. 把数据渲染到页面中
+    setDate(data);
+    function setDate(data){
+        //先清空原来tbody的数据
+        tbody.innerHTML = '';
+        data.forEach(function(value){
+            var tr = document.createElement('tr');
+            tr.innerHTML = '&lt;td&gt;'+value.id+'&lt;/td&gt;&lt;td&gt;'+value.name+'&lt;/td&gt;&lt;td&gt;'+value.price+'&lt;/td&gt;';
+            tbody.appendChild(tr);
+        })
+    }
+ 
+    //3.根据价格查询商品
+    //当我们点击了按钮，就可以根据我们的商品价格去筛选数组里面的对象
+    search_price.addEventListener('click',function(){
+        var newData = data.filter(function(value){
+            return value.price &gt;= start.value &amp;&amp; value.price&lt;=end.value;
+        })
+        //把筛选完之后的对象渲染到页面中
+        setDate(newData);
+    })
+ 
+ 
+    // 4. 根据商品名称查找商品
+    // 如果查询数组中唯一的元素, 用some方法更合适,因为它找到这个元素,就不在进行循环,效率更高
+    search_pro.addEventListener('click',function(){
+        var arr =[];
+        data.some(function(value){
+            if(value.name === product.value)
+            {
+                arr.push(value);
+                return true; // return 后面必须写true  返回true就终止循环，不再查找
+            }
+        })
+        // 把拿到的数据渲染到页面中
+        setDate(arr);
+    })
+ 
+    //查询多个/模糊查询
+    // search_pro.addEventListener('click',function(){
+    //     var newData = data.filter(function(value){
+    //         // return value.name == product.value;
+    //         if(value.name.indexOf(product.value) !=-1)//模糊查询
+    //         {
+    //             return true;
+    //         }
+    //     })
+    //     setDate(newData);
+    // })
+    &lt;/script&gt;
+&lt;/body&gt;
+ 
+&lt;/html&gt;
+
+18.some和forEach区别
+如果是查询数组中唯一的元素 用some方法更合适
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;18.some和forEach区别&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+    var arr =['red','green','blue','pink','purper'];
+    //1.forEach迭代 遍历
+    // arr.forEach(function(value){
+    //     if(value =='green')
+    //     {
+    //         console.log('找到了该元素');
+    //         return true;//在 forEach 里面return 不会终止迭代
+    //     }
+    //     console.log(11);
+    // })
+ 
+    //some 如果是查询数组中唯一的元素 用some方法更合适
+    // arr.some(function(value){
+    //     if(value ==='green')
+    //     { 
+    //         console.log('找到了该元素');//在some里面 遇到 return true 就是终止遍历 迭代效率更高
+    //         return true;
+    //     }
+    //     console.log(22);
+    // })
+ 
+    //filter
+    arr.filter(function(value){
+        if(value ==='green')
+        { 
+            console.log('找到了该元素');
+            return true;//filter 里面return 不会终止迭代
+        }
+        console.log(22);
+    })
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+19.trim方法去除字符串两侧空格
+​ str.trim()
+
+trim() 方法会从一个字符串的两端删除空白字符
+rim() 方法并不影响原字符本身，他返回的是一个新的字符串
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;19.trim方法去除字符串两侧空格&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;input type=&quot;text&quot;/&gt;
+    &lt;button&gt;点击&lt;/button&gt;
+    &lt;div&gt;&lt;/div&gt;
+    &lt;script&gt;
+        //trim 方法去除字符串两侧空格
+        var str = '  an  dy  ';
+        console.log(str);
+        var str1 = str.trim();
+        console.log(str1);
+        var input = document.querySelector('input');
+        var button = document.querySelector('button');
+        var div = document.querySelector('div');
+        button.onclick = function(){
+            var str = input.value.trim();
+            if(str=='')
+            {
+                alert('请输入内容');
+            }
+            else{
+                div.innerHTML = str;
+                console.log(str);
+                console.log(str.length);
+            }
+        }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+20.Object.keys遍历对象属性
+Object.keys 用于获取对象自身所有的属性(属性名)
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;20.Object.keys遍历对象属性&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+        //用于获取对象自身所有的属性(属性名)
+        var obj = {
+            id:1,
+            name:'小米',
+            price:1999
+        }
+        var arr  =  Object.keys(obj);//获取属性名
+        console.log(arr);
+        // obj.num = 1000;
+        arr.forEach(function(value){
+            console.log(value);
+        })
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+21.Object.defineProperty方法
+Object.defineproperty(obj, prop, descriptor)
+
+Object.defineproperty() 定义对象中新属性或修改原有的属性
+* obj: 必需，目标对象
+* prop：必需，需定义或修改的属性的名字
+* descriptor: 必需，目标属性所拥有的特性
+
+ Object.defineproperty() 第三个参数 descriptor 说明：以对象形式{}书写
+* value: 设置属性的值 默认为undefined
+* writable: 值是否可以重写。true|false 默认为false
+* enumerable: 目标属性是否可以被枚举。true|false 默认为false
+* configurable: 目标属性是否可以被删除或是否可以再次修改特特性 true|false 默认为false
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;21.Object.defineProperty方法&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+        //Obj.defineProperty() 定义新属性或修改原有的属性
+        var obj = {
+            id:1,
+            name:'小米',
+            price:1999
+        };
+        //1.以前的对象添加和修改属性的方法
+        // obj.num = 1000;
+        // console.log(obj);
+        //2.Obj.defineProperty() 定义属性或修改原有的属性
+        Object.defineProperty(obj,'num',{
+            value :20,
+            enumerable:true,
+        });
+        Object.defineProperty(obj,'price',{
+            value :9.6,
+        });
+        console.log(obj);
+        Object.defineProperty(obj,'id',{
+            //如果值为false 不允许修改这个属性值 默认值也是false
+            writable:false,
+        })
+        obj.id = 20;
+        Object.defineProperty(obj,'address',{
+            value:'山东蓝翔技校',
+            writable:false,
+            //enumerable 如果值为false 则不允许遍历，默认的值是false
+            enumerable:false,
+            //configurable 如果值为false 则不允许删除这个属性，不允许再修改第三个参数里面的特性 默认的值是false
+            configurable:false,
+        })
+        console.log(Object.keys(obj));
+        delete obj.address;
+        delete obj.name;
+        console.log(obj);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br><span class="line-number">369</span><br><span class="line-number">370</span><br><span class="line-number">371</span><br><span class="line-number">372</span><br><span class="line-number">373</span><br><span class="line-number">374</span><br><span class="line-number">375</span><br><span class="line-number">376</span><br><span class="line-number">377</span><br><span class="line-number">378</span><br><span class="line-number">379</span><br><span class="line-number">380</span><br><span class="line-number">381</span><br><span class="line-number">382</span><br><span class="line-number">383</span><br><span class="line-number">384</span><br><span class="line-number">385</span><br><span class="line-number">386</span><br><span class="line-number">387</span><br><span class="line-number">388</span><br><span class="line-number">389</span><br><span class="line-number">390</span><br><span class="line-number">391</span><br><span class="line-number">392</span><br><span class="line-number">393</span><br><span class="line-number">394</span><br><span class="line-number">395</span><br><span class="line-number">396</span><br><span class="line-number">397</span><br><span class="line-number">398</span><br><span class="line-number">399</span><br><span class="line-number">400</span><br><span class="line-number">401</span><br><span class="line-number">402</span><br><span class="line-number">403</span><br><span class="line-number">404</span><br><span class="line-number">405</span><br><span class="line-number">406</span><br><span class="line-number">407</span><br><span class="line-number">408</span><br><span class="line-number">409</span><br><span class="line-number">410</span><br><span class="line-number">411</span><br><span class="line-number">412</span><br><span class="line-number">413</span><br><span class="line-number">414</span><br><span class="line-number">415</span><br><span class="line-number">416</span><br><span class="line-number">417</span><br><span class="line-number">418</span><br><span class="line-number">419</span><br><span class="line-number">420</span><br><span class="line-number">421</span><br><span class="line-number">422</span><br><span class="line-number">423</span><br><span class="line-number">424</span><br><span class="line-number">425</span><br><span class="line-number">426</span><br><span class="line-number">427</span><br><span class="line-number">428</span><br><span class="line-number">429</span><br><span class="line-number">430</span><br><span class="line-number">431</span><br><span class="line-number">432</span><br><span class="line-number">433</span><br><span class="line-number">434</span><br><span class="line-number">435</span><br><span class="line-number">436</span><br><span class="line-number">437</span><br><span class="line-number">438</span><br><span class="line-number">439</span><br><span class="line-number">440</span><br><span class="line-number">441</span><br><span class="line-number">442</span><br><span class="line-number">443</span><br><span class="line-number">444</span><br><span class="line-number">445</span><br><span class="line-number">446</span><br><span class="line-number">447</span><br><span class="line-number">448</span><br><span class="line-number">449</span><br><span class="line-number">450</span><br><span class="line-number">451</span><br><span class="line-number">452</span><br><span class="line-number">453</span><br><span class="line-number">454</span><br><span class="line-number">455</span><br><span class="line-number">456</span><br><span class="line-number">457</span><br><span class="line-number">458</span><br><span class="line-number">459</span><br><span class="line-number">460</span><br><span class="line-number">461</span><br><span class="line-number">462</span><br><span class="line-number">463</span><br><span class="line-number">464</span><br><span class="line-number">465</span><br><span class="line-number">466</span><br><span class="line-number">467</span><br><span class="line-number">468</span><br><span class="line-number">469</span><br><span class="line-number">470</span><br><span class="line-number">471</span><br><span class="line-number">472</span><br><span class="line-number">473</span><br><span class="line-number">474</span><br><span class="line-number">475</span><br><span class="line-number">476</span><br><span class="line-number">477</span><br><span class="line-number">478</span><br><span class="line-number">479</span><br><span class="line-number">480</span><br><span class="line-number">481</span><br><span class="line-number">482</span><br><span class="line-number">483</span><br><span class="line-number">484</span><br><span class="line-number">485</span><br><span class="line-number">486</span><br><span class="line-number">487</span><br><span class="line-number">488</span><br><span class="line-number">489</span><br><span class="line-number">490</span><br><span class="line-number">491</span><br><span class="line-number">492</span><br><span class="line-number">493</span><br><span class="line-number">494</span><br><span class="line-number">495</span><br><span class="line-number">496</span><br><span class="line-number">497</span><br><span class="line-number">498</span><br><span class="line-number">499</span><br><span class="line-number">500</span><br><span class="line-number">501</span><br><span class="line-number">502</span><br><span class="line-number">503</span><br><span class="line-number">504</span><br><span class="line-number">505</span><br><span class="line-number">506</span><br><span class="line-number">507</span><br><span class="line-number">508</span><br><span class="line-number">509</span><br><span class="line-number">510</span><br><span class="line-number">511</span><br><span class="line-number">512</span><br><span class="line-number">513</span><br><span class="line-number">514</span><br><span class="line-number">515</span><br><span class="line-number">516</span><br><span class="line-number">517</span><br><span class="line-number">518</span><br><span class="line-number">519</span><br><span class="line-number">520</span><br><span class="line-number">521</span><br><span class="line-number">522</span><br><span class="line-number">523</span><br><span class="line-number">524</span><br><span class="line-number">525</span><br><span class="line-number">526</span><br><span class="line-number">527</span><br><span class="line-number">528</span><br><span class="line-number">529</span><br><span class="line-number">530</span><br><span class="line-number">531</span><br><span class="line-number">532</span><br><span class="line-number">533</span><br><span class="line-number">534</span><br><span class="line-number">535</span><br><span class="line-number">536</span><br><span class="line-number">537</span><br><span class="line-number">538</span><br><span class="line-number">539</span><br><span class="line-number">540</span><br><span class="line-number">541</span><br><span class="line-number">542</span><br><span class="line-number">543</span><br><span class="line-number">544</span><br><span class="line-number">545</span><br><span class="line-number">546</span><br><span class="line-number">547</span><br><span class="line-number">548</span><br><span class="line-number">549</span><br><span class="line-number">550</span><br><span class="line-number">551</span><br><span class="line-number">552</span><br><span class="line-number">553</span><br><span class="line-number">554</span><br><span class="line-number">555</span><br><span class="line-number">556</span><br><span class="line-number">557</span><br><span class="line-number">558</span><br><span class="line-number">559</span><br><span class="line-number">560</span><br><span class="line-number">561</span><br><span class="line-number">562</span><br><span class="line-number">563</span><br><span class="line-number">564</span><br><span class="line-number">565</span><br><span class="line-number">566</span><br><span class="line-number">567</span><br><span class="line-number">568</span><br><span class="line-number">569</span><br><span class="line-number">570</span><br><span class="line-number">571</span><br><span class="line-number">572</span><br><span class="line-number">573</span><br><span class="line-number">574</span><br><span class="line-number">575</span><br><span class="line-number">576</span><br><span class="line-number">577</span><br><span class="line-number">578</span><br><span class="line-number">579</span><br><span class="line-number">580</span><br><span class="line-number">581</span><br><span class="line-number">582</span><br><span class="line-number">583</span><br><span class="line-number">584</span><br><span class="line-number">585</span><br><span class="line-number">586</span><br><span class="line-number">587</span><br><span class="line-number">588</span><br><span class="line-number">589</span><br><span class="line-number">590</span><br><span class="line-number">591</span><br><span class="line-number">592</span><br><span class="line-number">593</span><br><span class="line-number">594</span><br><span class="line-number">595</span><br><span class="line-number">596</span><br><span class="line-number">597</span><br><span class="line-number">598</span><br><span class="line-number">599</span><br><span class="line-number">600</span><br><span class="line-number">601</span><br><span class="line-number">602</span><br><span class="line-number">603</span><br><span class="line-number">604</span><br><span class="line-number">605</span><br><span class="line-number">606</span><br><span class="line-number">607</span><br><span class="line-number">608</span><br><span class="line-number">609</span><br><span class="line-number">610</span><br><span class="line-number">611</span><br><span class="line-number">612</span><br><span class="line-number">613</span><br><span class="line-number">614</span><br><span class="line-number">615</span><br><span class="line-number">616</span><br><span class="line-number">617</span><br><span class="line-number">618</span><br><span class="line-number">619</span><br><span class="line-number">620</span><br><span class="line-number">621</span><br><span class="line-number">622</span><br><span class="line-number">623</span><br><span class="line-number">624</span><br><span class="line-number">625</span><br><span class="line-number">626</span><br><span class="line-number">627</span><br><span class="line-number">628</span><br><span class="line-number">629</span><br><span class="line-number">630</span><br><span class="line-number">631</span><br><span class="line-number">632</span><br><span class="line-number">633</span><br><span class="line-number">634</span><br><span class="line-number">635</span><br><span class="line-number">636</span><br><span class="line-number">637</span><br><span class="line-number">638</span><br><span class="line-number">639</span><br><span class="line-number">640</span><br><span class="line-number">641</span><br><span class="line-number">642</span><br><span class="line-number">643</span><br><span class="line-number">644</span><br><span class="line-number">645</span><br><span class="line-number">646</span><br><span class="line-number">647</span><br><span class="line-number">648</span><br><span class="line-number">649</span><br><span class="line-number">650</span><br><span class="line-number">651</span><br><span class="line-number">652</span><br><span class="line-number">653</span><br><span class="line-number">654</span><br><span class="line-number">655</span><br><span class="line-number">656</span><br><span class="line-number">657</span><br><span class="line-number">658</span><br><span class="line-number">659</span><br><span class="line-number">660</span><br><span class="line-number">661</span><br><span class="line-number">662</span><br><span class="line-number">663</span><br><span class="line-number">664</span><br><span class="line-number">665</span><br><span class="line-number">666</span><br><span class="line-number">667</span><br><span class="line-number">668</span><br><span class="line-number">669</span><br><span class="line-number">670</span><br><span class="line-number">671</span><br><span class="line-number">672</span><br><span class="line-number">673</span><br><span class="line-number">674</span><br><span class="line-number">675</span><br><span class="line-number">676</span><br><span class="line-number">677</span><br><span class="line-number">678</span><br><span class="line-number">679</span><br><span class="line-number">680</span><br><span class="line-number">681</span><br><span class="line-number">682</span><br><span class="line-number">683</span><br><span class="line-number">684</span><br><span class="line-number">685</span><br><span class="line-number">686</span><br><span class="line-number">687</span><br><span class="line-number">688</span><br><span class="line-number">689</span><br><span class="line-number">690</span><br><span class="line-number">691</span><br><span class="line-number">692</span><br><span class="line-number">693</span><br><span class="line-number">694</span><br><span class="line-number">695</span><br><span class="line-number">696</span><br><span class="line-number">697</span><br><span class="line-number">698</span><br><span class="line-number">699</span><br><span class="line-number">700</span><br><span class="line-number">701</span><br><span class="line-number">702</span><br><span class="line-number">703</span><br><span class="line-number">704</span><br><span class="line-number">705</span><br><span class="line-number">706</span><br><span class="line-number">707</span><br><span class="line-number">708</span><br><span class="line-number">709</span><br><span class="line-number">710</span><br><span class="line-number">711</span><br><span class="line-number">712</span><br><span class="line-number">713</span><br><span class="line-number">714</span><br><span class="line-number">715</span><br><span class="line-number">716</span><br><span class="line-number">717</span><br><span class="line-number">718</span><br><span class="line-number">719</span><br><span class="line-number">720</span><br><span class="line-number">721</span><br><span class="line-number">722</span><br><span class="line-number">723</span><br><span class="line-number">724</span><br><span class="line-number">725</span><br><span class="line-number">726</span><br><span class="line-number">727</span><br><span class="line-number">728</span><br><span class="line-number">729</span><br><span class="line-number">730</span><br><span class="line-number">731</span><br><span class="line-number">732</span><br><span class="line-number">733</span><br><span class="line-number">734</span><br><span class="line-number">735</span><br><span class="line-number">736</span><br><span class="line-number">737</span><br><span class="line-number">738</span><br><span class="line-number">739</span><br><span class="line-number">740</span><br><span class="line-number">741</span><br><span class="line-number">742</span><br><span class="line-number">743</span><br><span class="line-number">744</span><br><span class="line-number">745</span><br><span class="line-number">746</span><br><span class="line-number">747</span><br><span class="line-number">748</span><br><span class="line-number">749</span><br><span class="line-number">750</span><br><span class="line-number">751</span><br><span class="line-number">752</span><br><span class="line-number">753</span><br><span class="line-number">754</span><br><span class="line-number">755</span><br><span class="line-number">756</span><br><span class="line-number">757</span><br><span class="line-number">758</span><br><span class="line-number">759</span><br><span class="line-number">760</span><br><span class="line-number">761</span><br><span class="line-number">762</span><br><span class="line-number">763</span><br><span class="line-number">764</span><br><span class="line-number">765</span><br><span class="line-number">766</span><br><span class="line-number">767</span><br><span class="line-number">768</span><br><span class="line-number">769</span><br><span class="line-number">770</span><br><span class="line-number">771</span><br><span class="line-number">772</span><br><span class="line-number">773</span><br><span class="line-number">774</span><br><span class="line-number">775</span><br><span class="line-number">776</span><br><span class="line-number">777</span><br><span class="line-number">778</span><br><span class="line-number">779</span><br><span class="line-number">780</span><br><span class="line-number">781</span><br><span class="line-number">782</span><br><span class="line-number">783</span><br><span class="line-number">784</span><br><span class="line-number">785</span><br><span class="line-number">786</span><br><span class="line-number">787</span><br><span class="line-number">788</span><br><span class="line-number">789</span><br><span class="line-number">790</span><br><span class="line-number">791</span><br><span class="line-number">792</span><br><span class="line-number">793</span><br><span class="line-number">794</span><br><span class="line-number">795</span><br><span class="line-number">796</span><br><span class="line-number">797</span><br><span class="line-number">798</span><br><span class="line-number">799</span><br><span class="line-number">800</span><br><span class="line-number">801</span><br><span class="line-number">802</span><br><span class="line-number">803</span><br><span class="line-number">804</span><br><span class="line-number">805</span><br><span class="line-number">806</span><br><span class="line-number">807</span><br><span class="line-number">808</span><br><span class="line-number">809</span><br><span class="line-number">810</span><br><span class="line-number">811</span><br><span class="line-number">812</span><br><span class="line-number">813</span><br><span class="line-number">814</span><br><span class="line-number">815</span><br><span class="line-number">816</span><br><span class="line-number">817</span><br><span class="line-number">818</span><br><span class="line-number">819</span><br><span class="line-number">820</span><br><span class="line-number">821</span><br><span class="line-number">822</span><br><span class="line-number">823</span><br><span class="line-number">824</span><br><span class="line-number">825</span><br><span class="line-number">826</span><br><span class="line-number">827</span><br><span class="line-number">828</span><br><span class="line-number">829</span><br><span class="line-number">830</span><br><span class="line-number">831</span><br><span class="line-number">832</span><br><span class="line-number">833</span><br><span class="line-number">834</span><br><span class="line-number">835</span><br><span class="line-number">836</span><br><span class="line-number">837</span><br><span class="line-number">838</span><br><span class="line-number">839</span><br><span class="line-number">840</span><br><span class="line-number">841</span><br><span class="line-number">842</span><br><span class="line-number">843</span><br><span class="line-number">844</span><br><span class="line-number">845</span><br><span class="line-number">846</span><br><span class="line-number">847</span><br><span class="line-number">848</span><br><span class="line-number">849</span><br><span class="line-number">850</span><br><span class="line-number">851</span><br><span class="line-number">852</span><br><span class="line-number">853</span><br><span class="line-number">854</span><br><span class="line-number">855</span><br><span class="line-number">856</span><br><span class="line-number">857</span><br><span class="line-number">858</span><br><span class="line-number">859</span><br><span class="line-number">860</span><br><span class="line-number">861</span><br><span class="line-number">862</span><br><span class="line-number">863</span><br><span class="line-number">864</span><br><span class="line-number">865</span><br><span class="line-number">866</span><br><span class="line-number">867</span><br><span class="line-number">868</span><br><span class="line-number">869</span><br><span class="line-number">870</span><br><span class="line-number">871</span><br><span class="line-number">872</span><br><span class="line-number">873</span><br><span class="line-number">874</span><br><span class="line-number">875</span><br><span class="line-number">876</span><br><span class="line-number">877</span><br><span class="line-number">878</span><br><span class="line-number">879</span><br><span class="line-number">880</span><br><span class="line-number">881</span><br><span class="line-number">882</span><br><span class="line-number">883</span><br><span class="line-number">884</span><br><span class="line-number">885</span><br><span class="line-number">886</span><br><span class="line-number">887</span><br><span class="line-number">888</span><br><span class="line-number">889</span><br><span class="line-number">890</span><br><span class="line-number">891</span><br><span class="line-number">892</span><br><span class="line-number">893</span><br><span class="line-number">894</span><br><span class="line-number">895</span><br><span class="line-number">896</span><br><span class="line-number">897</span><br><span class="line-number">898</span><br><span class="line-number">899</span><br><span class="line-number">900</span><br><span class="line-number">901</span><br><span class="line-number">902</span><br><span class="line-number">903</span><br><span class="line-number">904</span><br><span class="line-number">905</span><br><span class="line-number">906</span><br><span class="line-number">907</span><br><span class="line-number">908</span><br></div></div><p><a href="https://blog.csdn.net/weixin_41325924/article/details/123109139?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166660565516800192265714%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=166660565516800192265714&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-7-123109139-null-null.142%5Ev59%5Epc_rank_34_queryrelevant25,201%5Ev3%5Econtrol_2&amp;utm_term=javascript%E9%AB%98%E7%BA%A7%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B&amp;spm=1018.2226.3001.4187" target="_blank" rel="noopener noreferrer">转载自<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">5/15/2022, 5:17:53 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/docs/theme-reco/theme.html" class="prev">
+            javascript-高级进阶篇(2)
+          </a></span> <span class="next"><a href="/docs/theme-reco/api.html">
+            html+css学习指北
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 zt's Blog
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="260px" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://assets.smallsunnyfox.com/music/2.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://assets.smallsunnyfox.com/music/2.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://assets.smallsunnyfox.com/music/2.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>강남역 4번 출구</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>Plastic / Fallin` Dild</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><canvas id="vuepress-canvas-cursor"></canvas><!----><div class="RibbonAnimation"></div><div></div></div></div>
+    <script src="/assets/js/app.6b2fd728.js" defer></script><script src="/assets/js/3.d37e4b81.js" defer></script><script src="/assets/js/1.894460d1.js" defer></script><script src="/assets/js/19.e2e4f8fb.js" defer></script>
+  </body>
+</html>
